@@ -1,0 +1,300 @@
+html{
+    scroll-behavior: smooth;
+    transition-duration: 2s;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+@media screen and (max-width: 600px){
+    .navbar a {
+        float: none;
+        width: 50%;
+    }
+}
+
+
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    font-family: 'Lato';
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.navbar ul li{
+    margin: 5px;
+    padding: 5px;
+    width: 10%;
+    font-weight: bolder;
+}
+
+
+/*showcase display = "HOME"
+includes the "Florida State University Online ACM Club & "Join" button*/
+.showcase {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url('img/FSU-logo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #eeeeee;
+    background-size: contain;
+    height: 65vh;
+    text-align: center;
+    font-family: 'Archivo Black';
+    font-size: 24px;
+}
+
+a.join-button{
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #782f40;
+    font-family: 'Archivo Black';
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+a.join-button:hover{
+    background-color: #3bb0eb;
+}
+
+/*UPCOMING EVENTS*/
+.events-upcoming{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#events-upcoming-title{
+    font-family: 'Archivo Black';
+    font-size: 24px;
+}
+
+#events-upcoming-img img{
+    width: 100%;
+    height: auto;
+}
+
+a.event-button{
+    display: inline-block;
+    width: auto;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #c7c7c7;
+    font-family: 'Archivo Black';
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+a.event-button:hover{
+    background-color: #3bb0eb;
+}
+
+/*ARCHIVED POSTS*/
+
+#events-archives{
+    margin: 0;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: 'Archivo Black';
+    font-size: 20px;
+}
+
+.events-archives-scroll{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+#archived-post{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    font-family: 'Poppins';
+    font-size: 12px;
+    width: 100%;
+    height: auto;
+}
+#archived-post img{
+    width: 20vh;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/*CONTRIBUTIONS*/
+.contributions-featured{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #eeeeee url('img/FSU-logo.png') no-repeat fixed center;
+    background-size: contain;
+    margin-top: 25%;
+    padding: 20px 10px;
+    font-family: 'Archivo Black';
+    font-size: 24px;
+    text-align: center;
+}
+
+.contributions-featured p{
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+/*ABOUT section*/
+/*JOIN section*/
+.about, .join{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #eeeeee url('img/FSU-logo.png') no-repeat fixed center;
+    background-size: contain;
+    font-family: 'Archivo Black';
+    font-size: 20px;
+    margin-top: 25%;
+    padding: 20px 10px;
+}
+
+#about-text p, #join-text p{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins';
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+/*LEADERSHIP section*/
+
+.leadership{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Archivo Black';
+    font-size: 20px;
+}
+
+#leadership-list{
+    overflow: hidden;
+    width: 85%;
+    height: 50%;
+}
+
+.leadership-2020{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+.leadership-2021{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+#leadership-year-tile{
+    width: 125px;
+    height: 125px;
+    margin: 5px;
+    padding: 2px;
+    background: #782f40;
+}
+
+#leadership-year-tile p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Archivo Black';
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#clubleader img{
+    width: 125px;
+    height: auto;
+    border-radius: 75px;
+    margin: 5px;
+    padding: 2px;
+}
+
+#clubleader p{
+    font-family: 'Poppins';
+    font-size: 12px;
+    text-align: center;
+}
+
+/*JOIN section*/
+#join-title{
+    font-family: 'Archivo Black';
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+#join-form{
+    font-family: 'Poppins';
+}
+
+
+/*"Powered by FSU OACM Club Members"*/
+footer{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    background-image: url('img/FSU-seal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:top;
+    background-color: #782f40;
+    font-family: 'Poppins';
+    font-size: 12px;
+}
