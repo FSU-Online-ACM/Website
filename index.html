@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style>
+        .error {color: #FF0000;}
+        </style>
         <title>FSU ACM</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +25,8 @@
         <!--SHOWCASE-->
         <div class="showcase">
             <section id="showcase-text">
-                <h1>Florida State Online ACM Club</h1>
+              <h1>Florida State University</h1>
+	      <h1>Online ACM Club</h1>
             </section>
             <section id="showcase-button">
                 <a href="#join" class="join-button">Join</a>
@@ -124,7 +128,7 @@
                 <h1>About</h1>
             </section>
             <section id="about-text">
-                <p>The Online ACM Club at FSU was founded in Spring 2020 with the purpose to provide a welcoming atmosphere, support students of all levels in their degree goals, and establish a hub for the online computer science community which builds community and connections with other students and professional associations.<br><br>Likewise, we want to provide members as much preparation and real-world experience toward their career goals by inviting a diverse guest speaker list, offering engaging coding challenges, and building team projects for various organizations, other school clubs, teachers, or for fun.<br><br>We promote teamwork, leadership, and integrity and aim to build a network of computer science professionals all over the United States for which to build lasting professional relationships.</p>
+                <p>The Online ACM Club at FSU was founded in Spring 2020 with the purpose to provide a welcoming atmosphere, support students of all levels in their degree goals, and to establish a hub for the online computer science community which builds community and connections with other students and professional associations.<br><br>Likewise, we want to provide members as much preparation and real-world experience toward their career goals by inviting a diverse guest speaker list, offering engaging coding challenges, and building team projects for various organizations, other school clubs, teachers, or for fun.<br><br>We promote teamwork, leadership, and integrity and aim to build a network of computer science professionals all over the United States for which to build lasting professional relationships.</p>
             </section>
         </div>
 
@@ -229,22 +233,15 @@
                 <p>Submit the form below to contact a leader. You can also reach out to <a href="#">Dr. Karen Works</a> or our <a href="#">current club president</a> to learn more about the club, including details about our next event or the <a href="#">Online ACM @ FSU Slack</a>.</p>
             </section>
             <section id="join-form">
-                <form>
-                    <table>
-                        <tr>
-                            <td><label>Full Name:</label></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><label>FSU E-mail:</label></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><label>Message:</label></td>
-                            <td><textarea></textarea></td>
-                        </tr>
-                    </table>
-                </form>
+	        <form action="mail_command.php" method="POST">
+                    <label>Full Name:</label>
+                    <input name="name" type="text" placeholder="Your full name..."><br>
+                    <label>FSU E-mail:</label>
+                    <input name="email" type="text" placeholder="Your email..."><br>
+                    <label>Message:</label><br>
+                    <textarea name="message" placeholder="Write something..."></textarea><br>
+                    <input type="submit" value="Send" /><br>
+                </form>  
             </section>
         </div>    
     </body>
